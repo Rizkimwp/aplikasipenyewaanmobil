@@ -5,7 +5,7 @@
     <div class="container">
         <h1>Selamat Datang di Aplikasi Penyewaan Mobil</h1>
         <p>Sebuah solusi praktis untuk menyewa mobil dengan mudah.</p>
-        <a href="{{ route('car.index') }}" class="btn btn-light btn-lg">Mau Rental?</a>
+        <a href="{{ route('rental.create') }}" class="btn btn-light btn-lg">Mau Rental?</a>
         <a href="{{ route('car.store') }}" class="btn btn-light btn-lg">Punya Mobil?</a>
     </div>
 </section>

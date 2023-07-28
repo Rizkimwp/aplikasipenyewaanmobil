@@ -11,7 +11,7 @@ class RentalController extends Controller
     public function index()
     {
         $userRentals = Rental::where('user_id', auth()->user()->id)->get();
-        return view('car.index', compact('userRentals'));
+        return view('rental.index', compact('userRentals'));
     }
 
     public function create(Request $request)
@@ -21,7 +21,7 @@ class RentalController extends Controller
                 ->orWhereBetween('end_date', [$request->start_date, $request->end_date]);
         })->get();
 
-        return view('car.create', compact('availableCars'));
+        return view('rental.create', compact('availableCars'));
     }
 
     public function store(Request $request)

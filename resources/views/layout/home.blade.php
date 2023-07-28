@@ -22,10 +22,10 @@
                 <a class="nav-link active " aria-current="page" href="/home">Home</a>
               </li>
               <li class="nav-item me-2">
-                <a class="nav-link" href="#">Daftar Mobil</a>
+                <a class="nav-link" href="{{ route('car.store') }}">Daftar Mobil</a>
               </li>
               <li class="nav-item me-5">
-                <a class="nav-link" href="#">Pricing</a>
+                <a class="nav-link" href="{{ route('rental.store') }}">Pricing</a>
               </li>
               <li class="nav-item">
                 <a href="{{ route('logout') }}"></a><button class="btn btn-info">Logout</button>

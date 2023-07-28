@@ -11,6 +11,10 @@ class Car extends Model
 
     protected $table = 'cars';
 
+    public function rentals()
+    {
+        return $this->hasMany(Rental::class);
+    }
     protected $fillable = [
         'merek',
         'model',
