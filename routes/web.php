@@ -46,3 +46,5 @@ Route::get('/cars/search', [CarController::class, 'search'])->name('car.search')
 Route::get('/rentals', [RentalController::class, 'index'])->name('rental.index');
 Route::get('/rentals/create', [RentalController::class, 'create'])->name('rental.create');
 Route::post('/rentals', [RentalController::class, 'store'])->name('rental.store');
+
+

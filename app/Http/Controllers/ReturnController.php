@@ -8,6 +8,10 @@ use App\Models\RentalReturn;
 
 class ReturnController extends Controller
 {
+    public function showReturnForm()
+    {
+        return view('returns.return');
+    }
     public function returnCar(Request $request)
     {
         $request->validate([
