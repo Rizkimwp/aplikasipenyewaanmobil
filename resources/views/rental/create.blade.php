@@ -1,7 +1,7 @@
 
 @extends('layout.app')
 
-@section('content')|
+@section('content')
     <section id="rentalForm" class="py-5">
         <div class="container">
             <h2>Peminjaman Mobil</h2>
@@ -23,7 +23,7 @@
                         @endforeach
                     </select>
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button name="" type="submit" class="btn btn-primary">Submit</button>
             </form>
         </div>
     </section>

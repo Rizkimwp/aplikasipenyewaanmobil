@@ -28,7 +28,7 @@
                 <a class="nav-link" href="{{ route('rental.store') }}">Pricing</a>
               </li>
               <li class="nav-item">
-                <a href="{{ route('logout') }}"></a><button class="btn btn-info">Logout</button>
+                <a href="{{ route('logout') }}"><button class="btn btn-info">Logout</button></a>
               </li>
             </ul>
           </div>

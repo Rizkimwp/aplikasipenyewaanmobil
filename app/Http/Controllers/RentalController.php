@@ -10,9 +10,18 @@ class RentalController extends Controller
 {
     public function index()
     {
-        $userRentals = Rental::where('user_id', auth()->user()->id)->get();
+
+    $user = auth()->user();
+
+    if ($user) {
+        $userRentals = Rental::where('user_id', $user->id)->get();
         return view('rental.index', compact('userRentals'));
     }
+
+    // Jika pengguna belum login, atau tidak ada data Rental terkait pengguna.
+    return redirect()->route('login')->with('error', 'Anda harus login untuk mengakses halaman ini.');
+}
+
 
     public function create(Request $request)
     {

@@ -1,4 +1,4 @@
-@extends('layout.app')
+@extends('layout.index')
 
 @section('content')
     <h1>Daftar Mobil</h1>

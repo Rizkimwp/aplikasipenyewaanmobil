@@ -18,8 +18,5 @@ class RentalReturn extends Model
         'total_cost',
     ];
 
-    public function rental()
-    {
-        return $this->belongsTo(Rental::class);
-    }
+
 }

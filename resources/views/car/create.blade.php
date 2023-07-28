@@ -1,4 +1,4 @@
-@extends('layout.app')
+@extends('layout.create')
 
 @section('content')
     <h1>Tambah Mobil Baru</h1>
