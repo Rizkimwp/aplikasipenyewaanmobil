@@ -8,14 +8,10 @@
     <title>Sewa Mobil</title>
 </head>
 <body>
-<header>
 
-
-</header>
-
-<main>
-    @yield('konten')
-</main>
+<div class="container-fluid mt-4">
+    @yield('login-konten')
+</div>
 
 <footer></footer>
 </body>
